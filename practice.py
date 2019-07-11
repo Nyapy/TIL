@@ -1,3 +1,3 @@
-int a = 5
+a, b, c = 4, 5, 3
 
-print(a)
+print(a>c)
