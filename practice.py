@@ -1,12 +1,16 @@
-import datetime
-date = datetime.date(2019,7,13)
-print(f'{date.year}{date.month}{date.day}')
+num = input()
+a = list(range(0,10))
+b=[0]*10
+c=[]
+c.extend(num)
 
-print(date.strftime('%Y%m%d'))
+for i in a:
+   for j in c:
+      if int(j) == i:
+         b[i] += 1
 
-print(date)
-
-for i in range(51):
-   t_time = date - datetime.timedelta(weeks=i)
-   targetDt = t_time.strftime('%Y%m%d')
-   print(targetDt)
+for k in a:
+   print('{} '.format(k), end='')
+print()
+for l in b:
+   print('{} ' .format(l), end='')
