@@ -1,0 +1,12 @@
+{% for lotto in lottos %}
+    <p>{{ lotto }}</p>
+{% endfor %}
+
+{% if lottos == real_lottos %}
+    <h1>당첨 대박;</h1> 
+
+{% else %}
+    <h1>까비!</h1>
+{% endif %}
+
+

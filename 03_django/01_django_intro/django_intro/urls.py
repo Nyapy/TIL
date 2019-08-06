@@ -18,6 +18,17 @@ from django.urls import path
 from pages import views
 
 urlpatterns = [
+    path('user_create/', views.user_create),
+    path('user_new/', views.user_new),
+    path('result/', views.result),
+    path('art/', views.art),
+    path('ping/', views.ping),
+    path('pong/', views.pong),
+    path('catch/', views.catch),
+    path('throw/', views.throw),
+    path('lotto/', views.lotto),
+    path('ispal/<pal>', views.ispal),
+    path('isbirth/', views.isbirth),
     path('student/<name>', views.student),
     path('info/', views.info),
     path('template_language/', views.template_language),
