@@ -6,20 +6,20 @@ from IPython import embed
 
 # Create your views here.
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'pages/index.html')
 
 def introduce(request):
-    return render(request, 'introduce.html')
+    return render(request, 'pages/introduce.html')
 
 def image(request):
-    return render(request, 'image.html')
+    return render(request, 'pages/image.html')
 
 #2. Template Variable(템플릿 변수)
 def dinner(request):
     menu = ('족발', '햄버거', '피자', '초밥')
     pick = random.choice(menu)
     context = {'pick': pick}
-    return render(request, 'dinner.html', context)
+    return render(request, 'pages/dinner.html', context)
 
 #3. Variable Routing(동적 라우팅)
 def hello(request, name, age):
@@ -28,7 +28,7 @@ def hello(request, name, age):
     context = {'name':name,
         'age': age,
         'pick': pick}
-    return render(request, 'hello.html', context)
+    return render(request, 'pages/hello.html', context)
 
 
 #4. 실습
@@ -37,18 +37,18 @@ def hello(request, name, age):
 
 def I(request, name, age):
     context = {'name':name, 'age': age}
-    return render(request, 'I.html', context)
+    return render(request, 'pages/I.html', context)
 
 def mul(request, num1, num2):
     context = {'num1': num1, 'num2': num2, 'num3' : num2*num1 }
-    return render(request, 'mul.html', context)
+    return render(request, 'pages/mul.html', context)
 
 #4-3. 반지름을 인자로 받아 원의 넓이를 구하시오.
 
 def area(request, r):
     pi = 3.14
     context = {'r': r, 'area': pi*r**2 }
-    return render(request, 'area.html', context )
+    return render(request, 'pages/area.html', context )
 
 #4. DTL(Django Template Language)
 def template_language(request):
@@ -65,10 +65,10 @@ def template_language(request):
         'empty_list': empty_list,
         'datetimenow': datetimenow,
     }
-    return render(request, 'template_language.html', context)
+    return render(request, 'pages/template_language.html', context)
 
 def info(request):
-    return render(request, 'class.html')
+    return render(request, 'pages/class.html')
 
 def student(request, name):
 
@@ -80,7 +80,7 @@ def student(request, name):
         'name': name,
         'age': dictionary.get(name) 
     } 
-    return render(request, 'student.html', context)
+    return render(request, 'pages/student.html', context)
 
 
 #6. 실습
@@ -93,7 +93,7 @@ def isbirth(request):
             'day': day
             }
 
-    return render(request, 'isbirth.html', context)
+    return render(request, 'pages/isbirth.html', context)
 
 
 #6-2. 회문 판별(palindrome)
@@ -103,7 +103,7 @@ def ispal(request, pal):
     else:
         context = { 'cucumber' : False}
 
-    return render(request, 'ispal.html', context)
+    return render(request, 'pages/ispal.html', context)
 
 #6-3. 로또 번호 추첨
 #lottos -> 1~45까지의 번호 중 6개를 랜덤으로 pick한 리스트
@@ -116,12 +116,12 @@ def lotto(request):
     context = {'lottos': lottos,
                 'real_lottos' : real_lottos
     }
-    return render(request, 'lotto.html', context)
+    return render(request, 'pages/lotto.html', context)
 
 
 #7. Form - GET
 def throw(request):
-    return render(request, 'throw.html')
+    return render(request, 'pages/throw.html')
 
 def catch(request):
     message = request.GET.get('message')
@@ -130,10 +130,10 @@ def catch(request):
         'message' : message,
         'message2' : message2,
     }
-    return render(request, 'catch.html', context)
+    return render(request, 'pages/catch.html', context)
 
 def ping(request):
-    return render(request, 'ping.html')
+    return render(request, 'pages/ping.html')
 
 def pong(request):
     A = request.GET.get('A')
@@ -142,12 +142,12 @@ def pong(request):
         'A' : A,
         'B' : B
     }
-    return render(request, 'pong.html', context)
+    return render(request, 'pages/pong.html', context)
 
 
 #8. Form - GET 실습(아스키 아티)
 def art(request):
-    return render(request, 'art.html')
+    return render(request, 'pages/art.html')
 
 def result(request):
     #1. form으로 날린 데이타를 받는다.(GET)
@@ -171,13 +171,13 @@ def result(request):
         'result': result,
     }
     # embed()
-    return render(request, 'result.html', context)
+    return render(request, 'pages/result.html', context)
 
 
 
     #9. From - POST
 def user_new(request):
-    return render(request, 'user_new.html')
+    return render(request, 'pages/user_new.html')
 
 def user_create(request):
     name = request.POST.get('name')
@@ -186,4 +186,10 @@ def user_create(request):
         'name' : name,
         'password' : pwd
     }
-    return render(request, 'user_create.html', context)
+    return render(request, 'pages/user_create.html', context)
+
+
+#Day.3
+#10. 정적 파일
+def static_example(request):
+    return render(request, 'pages/static_example.html')
