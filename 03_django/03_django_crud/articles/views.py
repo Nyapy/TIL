@@ -31,3 +31,20 @@ def delete(request, pk):
     article.delete()
 
     return redirect('/articles/')
+
+
+def edit(request, pk):
+    article = Article.objects.get(pk=pk) #기존에 작성된 글을 불러오는 작업
+    context = {
+        'article' : article,
+    }
+    return render(request, 'articles/edit.html', context)
+
+def update(request, pk):
+    article = Article.objects.get(pk=pk)
+
+    article.title = request.POST.get('title')
+    article.content = request.POST.get('content')
+    article.save()
+
+    return redirect(f'/articles/{article.pk}/')

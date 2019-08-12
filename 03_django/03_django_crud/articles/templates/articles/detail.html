@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
 {% extends 'base.html' %}
 
 {% block body %}
@@ -8,7 +21,9 @@
     <p>글 작성 시각: {{ article.created_at }}</p>
     <p>글 수정 시각: {{ article.updated_at }}</p>
     <hr>
-
+<i></i>
     <a href="/articles/">[메인 페이지로 가기]</a>
+    <a href="/articles/{{ article.pk }}/edit/" target="_blank">[수정]</a>
     <a href="/articles/{{ article.pk }}/delete/">[삭제]</a>
+
 {% endblock %}
