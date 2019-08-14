@@ -1,5 +1,6 @@
 import sys
 sys.stdin = open("view_input.txt")
+sys.stdout = open("view_output.txt", 'w')
 T = 10
 
 for tc in range(T):
