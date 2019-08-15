@@ -10,7 +10,7 @@ for tc in range(T):
 
     j = [2]*(N-2)
     j.insert(0,3)
-    print(j)
+    # print(j)
 
     col = 0
     dr = N
@@ -21,6 +21,7 @@ for tc in range(T):
 
 
     for a in range(rot):
+
         if a % 4 == 0 :
             while col < dr:
                 arr[row][col] = num
@@ -37,14 +38,16 @@ for tc in range(T):
             row -= 1
             num -= 1
 
+
         if a % 4 == 2 :
-            while col > ul:
+            while col >= ul:
                 arr[row][col] = num
                 col -= 1
                 num += 1
             col +=1
-            ul +=1
             num -= 1
+            dr -= 1
+
 
         if a % 4 == 3 :
             while row > ul:
@@ -52,11 +55,13 @@ for tc in range(T):
                 row -= 1
                 num += 1
             row += 1
-            dr -=1
             num -= 1
+            ul += 1
 
-    # for q in range(N):
-    #     for w in range(N):
-    #         print(arr[q][w], end = ' ')
-    #     print()
+
+    print('#{}'.format(tc+1))
+    for q in range(N):
+        for w in range(N):
+            print(arr[q][w], end = ' ')
+        print()
 
