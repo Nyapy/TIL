@@ -1,12 +1,12 @@
 #font1 {
     font-size: 100px;
-    letter-spacing: 5px;
+    letter-spacing: 30px;
     font-family: 'Nanum Myeongjo', serif;
 }
 
 #font2 {
-    font-size: 400px;
-    font-weight: 50px;
+    font-size: 50px;
+    font-weight: 700;
     font-family: 'Sunflower', sans-serif;
     text-align: center;
 }
