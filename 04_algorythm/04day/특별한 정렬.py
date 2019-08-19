@@ -17,11 +17,14 @@ for tc in range(T):
         num_list[c], num_list[num_max] = num_list[num_max], num_list[c]
         c+=1
 
+        if c == len(num_list):
+            break
+
         num_min = c
         for k in range(c+1, len(num_list)):
             if num_list[num_min] > num_list[k]:
                 num_min = k
-        num_list[c], num_list[num_min] =  num_list[num_min], num_list[c]
+        num_list[c], num_list[num_min] = num_list[num_min], num_list[c]
         c +=1
 
     print("#{} ".format(tc + 1), end='')

@@ -13,28 +13,25 @@ for tc in range(T):
     ans = []
     c = 0
 
-
     for i in range(N):
         bolt.append([a[2*i], a[2*i+1]])
     # print(bolt)
-
 
     for i in range(N):
         if i == 0:
             ans.append(bolt[i])
             bolt[i] = [0,0]
 
-
         else:
-            for j in range(1, N):
-                if bolt[j][0] == ans[-1][1]:
-                    ans.append(bolt[j])
-                    bolt[j] = [0,0]
+            for j in bolt:
+                if j[0] == ans[-1][1]:
+                    ans.append(j)
+                    j = [0, 0]
 
-                elif bolt[j][1] == ans[0][0]:
-                    ans.insert(0, bolt[j])
+                elif j[1] == ans[0][0]:
+                    ans.insert(0, j)
                     c +=1
-                    bolt[j] = [0, 0]
+                    j = [0, 0]
 
     print("#{}" .format(tc+1), end = ' ')
     for i in range(N):
