@@ -2,21 +2,18 @@ import sys
 
 sys.stdin = open('회문_input.txt')
 
-T = 10
+T = int(input())
 
 for tc in range(T):
-    length = int(input())
+    N, length = map(int, input().split())
     numbers = []
 
     cnt = 0
-    for i in range(8):
+    for i in range(N):
         numbers += input().split()
 
-    # numbers = [input().split() for _ in range(8)]
-
-
-    for a in range(8):
-        for i in range(8 -length +1):
+    for a in range(N):
+        for i in range(N -length +1):
             palin_r = ''
             palin_c = ''
             for j in range(length):
@@ -24,8 +21,6 @@ for tc in range(T):
                 palin_c += numbers[i+j][a]
 
             if palin_r == palin_r[::-1]:
-                cnt += 1
+                print('#{} {}' .format(tc+1, palin_r))
             if palin_c == palin_c[::-1]:
-                cnt += 1
-
-    print('#{} {}' .format(tc+1, cnt))
+                print('#{} {}'.format(tc + 1, palin_c))
