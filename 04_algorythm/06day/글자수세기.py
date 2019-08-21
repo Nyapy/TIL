@@ -13,7 +13,6 @@ for tc in range(T):
 
     for i in str1:
         count = 0
-
         for j in str2:
             if i == j:
                 count +=1

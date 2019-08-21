@@ -4,7 +4,7 @@ sys.stdin = open('문자열비교_input.txt')
 
 def palin(str1, str2):
 
-    for i in range(len(str2) - len(str1) + 1):
+    for i in range(len(str2)-len(str1)+ 1):
         count = 0
         for j in range(len(str1)):
             if str2[i + j] == str1[j]:
