@@ -6,7 +6,7 @@ T = int(input())
 
 for tc in range(T):
     N = int(input())
-    farm = [list(map(int, input().split())) for _ in range(N)]
+    farm = [list(map(int, input())) for _ in range(N)]
 
     # print(farm)
     cnt = 0
@@ -22,5 +22,8 @@ for tc in range(T):
                 tot += farm[i][j]
                 cnt -=1
 
+    # print(farm)
+    # print(N)
+    # print(farm[0][2])
 
     print(tot)
