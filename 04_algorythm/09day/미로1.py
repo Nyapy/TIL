@@ -17,7 +17,11 @@ def start():
 
 def dsf(x,y):
     global cola
+
+    if cola == 1:
+        return
     check[x][y] = 1
+
 
     if laby[x][y] == 3 :
         cola = 1
