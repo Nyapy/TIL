@@ -28,28 +28,17 @@ for tc in range(T):
 
             elif i == ')':
                 while oper[-1] != '(':
-                    a = oper.pop()
-                    if a != '(':
-                        calculation.append(a)
+                    calculation.append(oper.pop())
                 oper.pop()
 
             else:
                 while first.get(oper[-1]) >= first.get(i):
-                    b = oper.pop()
-                    calculation.append(b)
+                    calculation.append(oper.pop())
 
-                if first.get(oper[-1]) < first.get(i):
-                    oper.append(i)
+                oper.append(i)
         else:
             calculation.append(i)
 
-    # while oper != []:
-    #     a= oper.pop()
-    #     if a != '(':
-    #         calculation.append(a)
-
-
-    # print(''.join(calculation))
 
     for i in calculation:
         if i in numbers:
@@ -60,7 +49,7 @@ for tc in range(T):
             if i == '+':
                 tem = g + f
             if i == '-':
-                tem = g + f
+                tem = g - f
             if i == '*':
                 tem = g * f
             if i == '/':
