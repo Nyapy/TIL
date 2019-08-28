@@ -14,6 +14,7 @@ def ariadne(x,y):
 
     if cola == 1:
         return
+
     check[y][x] = 1
 
     for k in range(4):

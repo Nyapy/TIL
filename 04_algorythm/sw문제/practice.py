@@ -1,6 +1,4 @@
-A = [1, 2, 3]
+# A = [1, 2, 3]
 
-B = A - [3]
-
-print(B)
-
+for i in range(0):
+    print('a')

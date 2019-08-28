@@ -5,20 +5,20 @@ sys.stdin = open('토너먼트 카드게임.txt')
 T = int(input())
 
 def RSP(a,b):
-    if a == 1 and b == 2:
+    if rsp[a] == 1 and rsp[b] == 2:
         return b
-    elif a == 1 and b == 3:
+    elif rsp[a] == 1 and rsp[b] == 3:
         return a
-    elif a == 2 and b == 1 :
+    elif rsp[a] == 2 and rsp[b] == 1 :
         return a
-    elif a == 2 and b == 3:
-        return a
-    elif a == 3 and b == 1 :
+    elif rsp[a] == 2 and rsp[b] == 3:
         return b
-    elif a == 3 and b == 2 :
+    elif rsp[a] == 3 and rsp[b] == 1 :
         return b
-    else :
-        return
+    elif rsp[a] == 3 and rsp[b] == 2 :
+        return a
+    elif rsp[a] == rsp[b]:
+        return a
 
 def winner(a):
         if len(a) == 2:
@@ -42,11 +42,11 @@ def winner(a):
 for tc in range(T):
 
     N = int(input())
+    index = []
 
     rsp = list(map(int, input().split()))
-    RSP = dict()
-    for i in range(len(rsp)):
-        RSP[i+1] = rsp[i]
+    for i in range(N):
+        index += [i]
 
-    print(RSP)
-    # print(winner(rsp))
+    A = winner(index)
+    print('#{} {}' .format(tc+1, A+1))
