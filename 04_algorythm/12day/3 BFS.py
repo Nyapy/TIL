@@ -3,7 +3,6 @@ import sys
 sys.stdin = open('BFS.txt')
 
 def BFS(v):
-    count = 1
     visited[v] = 1
     queue.append(v)
     print(v)
