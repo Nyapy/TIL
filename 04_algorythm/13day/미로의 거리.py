@@ -14,7 +14,6 @@ def these(x, y):
     while queque:
         t = queque.pop()
         tx ,ty = t[0], t[1]
-
         for k in range(4):
             nx = tx + dx[k]
             ny = ty + dy[k]
@@ -22,21 +21,12 @@ def these(x, y):
                 if check[nx][ny] == 0 and laby[nx][ny] != 1 :
                     queque.append([nx,ny])
                     check[nx][ny] = 1+check[tx][ty]
-
-
-
 for tc in range(1,T+1):
     N = int(input())
-
     laby = [list(map(int, input())) for _ in range(N)]
     check = [[0 for _ in range(N)] for __ in range(N)]
     k = 0
     queque = []
-
-
-    # print(laby)
-    # print(check)
-
     for i in range(N):
         for j in range(N):
             if laby[i][j] == 2:
@@ -46,11 +36,7 @@ for tc in range(1,T+1):
                 break
         if k == 1:
             break
-
-    # print(x,y)
-
     these(x, y)
-
     k= 0
     for i in range(N):
         for j in range(N):
