@@ -14,7 +14,6 @@ def printSet(n):
             print("%d " % data[i], end="")
     print()
 
-
 def powerset(n, k):
     if n == k:
         printSet(n)

@@ -1,9 +1,11 @@
 def perm(n, k, cursum):
     global ans
-    if ans < cursum: return
+    if ans < cursum:
+        return
     ###############
     if k == n:
-        if ans > cursum: ans = cursum
+        if ans > cursum:
+            ans = cursum
     else:
         for i in range(k, n):
             arr[k], arr[i] = arr[i], arr[k]
