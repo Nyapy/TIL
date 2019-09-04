@@ -11,12 +11,11 @@ def othello(x,y,c):
     k = 0
     q = []
     if c == 1:
-
         while k < 8:
             flag = 0
             nx = x + dx[k]
             ny = y + dy[k]
-            q= [[x, y]]
+            q= [[y, x]]
             while nx >=0 and ny >= 0 and nx <N and ny <N and nx<N:
                 if board[ny][nx] == 1 and flag == 0:
                     break
@@ -27,6 +26,9 @@ def othello(x,y,c):
                     while q:
                         t = q.pop()
                         board[t[0]][t[1]] = 1
+                    break
+                elif board[ny][nx] == 0:
+                    break
                 nx = nx + dx[k]
                 ny = ny + dy[k]
             k+=1
@@ -36,7 +38,7 @@ def othello(x,y,c):
             flag = 0
             nx = x + dx[k]
             ny = y + dy[k]
-            q =[[x, y]]
+            q =[[y, x]]
             while nx >=0 and ny >= 0 and nx <N and ny <N and nx<N:
                 if board[ny][nx] == 2 and flag == 0:
                     break
@@ -47,6 +49,10 @@ def othello(x,y,c):
                     while q:
                         t = q.pop()
                         board[t[0]][t[1]] = 2
+                    break
+                elif board[ny][nx] == 0:
+                    break
+
                 nx = nx +dx[k]
                 ny = ny +dy[k]
             k += 1
@@ -62,20 +68,13 @@ for tc in range(1,1+T):
     number = [list(map(int, input().split())) for _ in range(M)]
 
     for i in number:
-        othello(i[1]-1,i[0]-1,i[2])
+        othello(i[0]-1,i[1]-1,i[2])
+        # for i in range(N):
+        #     for j in range(N):
+        #         print(board[i][j], end=' ')
+        #     print()
+        # print()
 
-        for i in range(N):
-            for j in range(N):
-                print(board[i][j], end=' ')
-            print()
-        print()
-
-    # for i in range(N):
-    #     for j in range(N):
-    #         print(board[i][j], end = ' ')
-    #     print()
-    #
-    print(number)
     white = 0
     black = 0
     for i in range(N):
@@ -85,4 +84,4 @@ for tc in range(1,1+T):
             if board[i][j] == 2:
                 white += 1
 
-    print('#{} {} {}' .format(tc, white, black))
+    print('#{} {} {}' .format(tc, black, white))

@@ -20,11 +20,7 @@ def type0(x,y):
         type6(x,y)
     if under[x][y] ==7:
         type7(x,y)
-        if nx >= 0 and ny >= 0 and nx <M and ny < N:
-            if under[nx][ny] != 0 :
-                check[nx][ny] = 8
-                q.append(nx,ny)
-                time += 1
+
 
 def type1(x,y):
     global nx, ny
@@ -87,13 +83,29 @@ def trace(x,y):
     q.append([x,y])
     while time <L:
         t= q.pop(0)
+        type0(t[0],t[1])
+        if nx >= 0 and ny >= 0 and nx <M and ny < N:
+            if under[nx][ny] != 0 :
+                check[nx][ny] = 8
+                q.append(nx,ny)
+                time += 1
 
 
 
-for tc in range(T):
+for tc in range(1,1+T):
     N,M,R,C,L = map(int, input().split())
     under = [list(map(int, input().split())) for _ in range(N)]
     check = [[0 for _ in range(M)] for __ in range(N)]
     q = []
-    print(under)
-    print(check)
+    # print(under)
+    # print(check)
+    trace(R,C)
+    cnt = 0
+
+    for i in range(M):
+        for j in range(N):
+            if check[i][j] == 8:
+                cnt +=1
+
+
+    print('#{} {}' .format(tc, cnt))
