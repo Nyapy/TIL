@@ -4,26 +4,21 @@ sys.stdin = open('농작물 수확하기.txt')
 
 T = int(input())
 
-for tc in range(T):
+for tc in range(1,1+T):
     N = int(input())
     farm = [list(map(int, input())) for _ in range(N)]
 
-    # print(farm)
-    cnt = 0
     tot = 0
-    N2 = N//2
+    # print(farm)
+    cnt = 1
+
     for i in range(N):
         if i <= N//2:
-            for j in range((N//2)-cnt, (N//2)+cnt+1):
+            for j in range(N//2-i,N//2+1+i):
                 tot += farm[i][j]
-                cnt +=1
         if i > N//2:
-            for j in range((N//2)-cnt, (N//2)+cnt+1):
+            for j in range(cnt,N-cnt):
                 tot += farm[i][j]
-                cnt -=1
+            cnt +=1
 
-    # print(farm)
-    # print(N)
-    # print(farm[0][2])
-
-    print(tot)
+    print('#{} {}' .format(tc, tot))

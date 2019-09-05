@@ -13,7 +13,6 @@ def location(n):
         x = i
         i += 1
     y = n - total + x
-
     return y, x-y+1
 
 def num(x,y) :
