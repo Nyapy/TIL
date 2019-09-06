@@ -11,6 +11,6 @@ def perm(n, k):
             arr[k], arr[i] = arr[i], arr[k]
             perm(n, k+1)
             arr[k], arr[i] = arr[i], arr[k]
-arr = [1, 2, 3]
+arr = [1, 2, 3, 4]
 
-perm(3, 0)
+perm(4, 0)
