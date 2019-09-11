@@ -1,0 +1,14 @@
+import sys
+
+sys.stdin = open('비트출력.txt')
+
+bit = list(input())
+binary = []
+
+
+
+print(binary)
+for i in range(10):
+    n = 0
+    for j in range(i*7, i*7+7, 1):
+        n = n *2 +binary[j]

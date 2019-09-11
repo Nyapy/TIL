@@ -13,8 +13,7 @@ def answer(a,b):
     for i in a:
         for j in b:
             if i == j :
-                ans = i
-                return ans
+                return i
 
 def answer2(v):
     global cnt
