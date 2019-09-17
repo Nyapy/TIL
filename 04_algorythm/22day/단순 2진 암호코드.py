@@ -51,14 +51,13 @@ for tc in range(1,1+T):
     arr = [list(map(int, input())) for _ in range(N)]
 
     amho()
-    # print(imi)
     imitation = []
 
     for i in range(0,len(imi),7):
         tem = imi[i:i+7]
         a=trans(tem)
         imitation.append(a)
-    # print(imitation)
+
     check = 0
     for i in range(0,len(imitation)-1,2):
         check += imitation[i]*3
@@ -66,7 +65,6 @@ for tc in range(1,1+T):
         check += imitation[j]
     check += imitation[-1]
 
-    # print(check)
     ans = 0
     if check % 10 == 0:
         for k in imitation:
