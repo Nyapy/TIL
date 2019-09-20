@@ -1,4 +1,4 @@
-A = [11, 45, 23, 81, 28, 34]
+A = [11, 45, 23, 81, 28, 34,11]
 r = len(A)-1
 l = 0
 
@@ -7,12 +7,14 @@ def Hoare(A, l, r):
     i = l
     j = r
     while i <= j:
-        while A[i] <= p and i < r :
+        while A[i] <= p :
             i += 1
-
-        while A[j] >= p and j > l:
+            if i == r:
+                break
+        while A[j] >= p:
             j -= 1
-
+            if j == l :
+                break
         if i < j:
             A[i], A[j] = A[j], A[i]
 

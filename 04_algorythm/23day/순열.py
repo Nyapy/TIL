@@ -12,7 +12,8 @@ def perm(n, r, q):
             a[i], a[n-1] = a[n-1], a[i]
             t[r-1] = a[n-1]
             perm(n-1,r-1,q)
-            a[i], a[n - 1] = a[n - 1], a[i]
+            a[i], a[n-1] = a[n-1], a[i]
+
 a = [1,2,3,4]
 t = [0]*3
 
