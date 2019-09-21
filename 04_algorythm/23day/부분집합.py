@@ -4,7 +4,7 @@ data = [1,2,3]
 
 def printSet(n):
     for i in range(n):
-        if A[i] == 1:
+        if A[i] :
             print("%d " %data[i], end ="")
     print()
 

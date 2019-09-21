@@ -4,9 +4,7 @@ def myprint(q):
     #     print(" %d " %(T[q]), end = "")
     # print()
 
-    for i in range(q):
-        print(" %d " %(T[i]), end = '')
-    print()
+    print(T)
     
 def comb(n, r, q):
     if r == 0:
@@ -17,7 +15,7 @@ def comb(n, r, q):
         T[r-1] = A[n-1]
         comb(n-1, r-1, q)
         comb(n-1,r,q)
-A = [1,2,3,4]
+A = [1,2,3,4,5]
 T = [0]*3
 
-comb(4,3,3)
+comb(5,3,3)

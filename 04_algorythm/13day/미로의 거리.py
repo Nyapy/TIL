@@ -9,6 +9,7 @@ dy = [0, 0, -1, 1]
 
 def these(x, y):
     check[x][y] == 1
+
     queque.append([x,y])
 
     while queque:
