@@ -1,6 +1,6 @@
 import time
 from time import strftime
-start_time = time.time()
+# start_time = time.time()
 
 
 import sys
@@ -30,4 +30,4 @@ for tc in range(1, T+1):
     print('#{} {}' .format(tc, mind))
 
 
-print(time.time() - start_time, 'seconds')
+# print(time.time() - start_time, 'seconds')
