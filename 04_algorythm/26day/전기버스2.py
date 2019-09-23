@@ -11,7 +11,6 @@ for tc in range(1,1+T):
     i = 1
     cnt  = 0
 
-
     while i < N:
         if i+max_b < N:
             for j in range(i+1, i+max_b+1):
