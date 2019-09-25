@@ -3,7 +3,6 @@ int N;
 
 int main()
 {
-
 	scanf("%d", &N);
 
 	printf("%d \n", N);
