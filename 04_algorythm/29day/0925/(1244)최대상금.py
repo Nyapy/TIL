@@ -27,12 +27,12 @@ def Swap(prize, i, j):
 
 def findMax(prize, num, k):
     global ans
-    # for i in range(MAXSIZE):
-    #     if memo[k][i] == 0:
-    #         memo[k][i] = prize
-    #         break
-    #     elif memo[k][i] == prize:
-    #         return
+    for i in range(MAXSIZE):
+        if memo[k][i] == 0:
+            memo[k][i] = prize
+            break
+        elif memo[k][i] == prize:
+            return
 
     if k == num:
         if prize > ans: ans = prize
