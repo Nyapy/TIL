@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+
+{% block body %}
+    <h2 class="text-center">Articles</h2>
+    {% for article in articles %}
+        <p>No. {{ article.id }}|</p>
+        <p>title : {{ article.title }}</p>
+
+        <hr>
+    {% endfor %}
+    <a href="/articles/new/">[새 글 작성]</a>
+
+{% endblock %}
