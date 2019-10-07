@@ -4,7 +4,17 @@
     <bookmark url="file://$PROJECT_DIR$/04_algorythm/32day/동전거스름돈 2.py" line="5" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5a8390d-5d8e-4f8c-a630-b99f835dfbbf" name="Default Changelist" comment="" />
+    <list default="true" id="a5a8390d-5d8e-4f8c-a630-b99f835dfbbf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/new.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/crud/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/crud/settings.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,11 +25,11 @@
     <session id="1725412191">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="3" />
-          <entry key="project.open.time.2" value="2" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.2" value="4" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -49,20 +59,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/04_algorythm/32day/정식이의 은행업무.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-569">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-              <folding>
-                <marker date="1569975081524" expanded="true" signature="80:417" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -89,8 +86,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1126" />
-    <option name="width" value="801" />
+    <option name="x" value="-7" />
+    <option name="width" value="1119" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -251,14 +248,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.22002329" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32894737" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32790446" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39802632" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -451,11 +447,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/04_algorythm/32day/정식이의 은행업무.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-569">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding>
-            <marker date="1569975081524" expanded="true" signature="80:417" ph="..." />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
         </state>
       </provider>
     </entry>

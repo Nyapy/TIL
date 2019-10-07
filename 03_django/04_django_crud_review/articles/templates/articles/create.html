@@ -1,7 +1,15 @@
 {% extends 'base.html' %}
 
 {% block body %}
-
-    <h2 class="text-center">글 성공적으로 작성됐을 것 같다</h2>
-
-{% endblock%}
+    <h2 class="text-center">NEW</h2>
+    <form action="{% url 'articles:create' %}" method="POST">
+        {% csrf_token %}
+        <label for="title">Title</label><br>
+        <input type="text" name= "title" id="title"><br>
+        <label for="content">Content</label><br>
+        <textarea name="content" id="content" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="글 작성">
+    </form>
+    <hr>
+    <a href="{% url 'articles:index' %}">[메인 페이지]</a>
+{% endblock %}

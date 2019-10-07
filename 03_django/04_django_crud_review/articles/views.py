@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.core.exceptions import ValidationError
 from .models import Article
+from IPython import embed
 
 # Create your views here.
 
@@ -12,20 +13,19 @@ def index(request):
     context = {'articles':articles}
     return render(request, 'articles/index.html', context)
 
-def new(request):
-    return render(request, 'articles/new.html')
 
 def create(request):
-    try:
+    #포스트 요청일 때
+    if request.method == 'POST':
         title = request.POST.get('title')
         content = request.POST.get('content')
         article = Article(title=title, content= content)
-        article.full_clean()
-    except ValidationError:
-        raise ValidationError('Your Error Message')
-    else:
         article.save()
         return redirect('articles:detail', article.pk)
+
+    #겟 요청일 때
+    else:
+        return render(request, 'articles/create.html')
     # title = request.POST.get('title')
     # print(title)
     # content = request.POST.get('content')
@@ -52,18 +52,28 @@ def detail(request, pk):
     return render(request, 'articles/detail.html', context)
 
 def delete(request, pk):
-    article = Article.objects.get(pk=pk)
-    article.delete()
-    return redirect('articles:index')
+    if request.method == 'POST':
+        article = Article.objects.get(pk=pk)
+        article.delete()
+        return redirect('articles:index')
+    else:
+        return redirect('articles:index')
 
-def edit(request, pk):
-    article = Article.objects.get(pk=pk)
-    context = {'article':article }
-    return render(request, 'articles/edit.html', context)
+
+# def edit(request, pk):
+#     article = Article.objects.get(pk=pk)
+#     context = {'article':article }
+#     return render(request, 'articles/edit.html', context)
 
 def update(request, pk):
     article = Article.objects.get(pk=pk)
-    article.title = request.POST.get('title')
-    article.content = request.POST.get('content')
-    article.save()
-    return redirect('articles:detail', article.pk)
+
+    if request.method == 'POST':
+        article.title = request.POST.get('title')
+        article.content = request.POST.get('content')
+        article.save()
+        return redirect('articles:detail', article.pk)
+
+    else:
+        context = {'article':article }
+        return render(request, 'articles/update.html', context)

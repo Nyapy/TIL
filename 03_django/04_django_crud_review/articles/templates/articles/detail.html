@@ -10,7 +10,11 @@
     <p>글 수정 시각: {{ article.updated_at|date:'M,j,Y' }}</p>
     <hr>
     <!-- <a href="/articles/{{ article.pk }}/delete/">[글 삭제 ㄱ]</a><br> -->
-    <a href="{% url 'articles:delete' article.pk %}">[글 삭제]</a>
-    <a href="{% url 'articles:edit' article.pk %}">[글 수정 ㄱ]</a><br>
+    <form action="{% url 'articles:delete' article.pk %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value = "글 삭제" class= "btn btn-primary">
+    </form>
+    <!-- <a href="{% url 'articles:delete' article.pk %}">[글 삭제]</a> -->
+    <a href="{% url 'articles:update' article.pk %}">[글 수정 ㄱ]</a><br>
     <a href="{% url 'articles:index' %}">[Main page]</a>
 {% endblock %}
