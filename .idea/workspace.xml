@@ -6,14 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a5a8390d-5d8e-4f8c-a630-b99f835dfbbf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/new.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/crud/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/crud/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/jobs/templates/jobs/past_life.html" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/jobs/templates/jobs/past_life.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/jobs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/jobs/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,41 +25,51 @@
     <session id="1725412191">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="3" />
-          <entry key="project.open.time.2" value="4" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.2" value="7" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="19" />
+          <entry key="py" value="20" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="19" />
+          <entry key="Python" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4078" />
+          <entry key="py" value="4085" />
           <entry key="txt" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="30" />
-          <entry key="Python" value="4078" />
+          <entry key="Python" value="4085" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/practice.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,12 +92,13 @@
         <option value="$PROJECT_DIR$/04_algorythm/32day/냅색(DP).py" />
         <option value="$PROJECT_DIR$/04_algorythm/32day/부분수열의합.py" />
         <option value="$PROJECT_DIR$/04_algorythm/32day/정식이의 은행업무.py" />
+        <option value="$PROJECT_DIR$/practice.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1119" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -97,7 +108,7 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/practice.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -247,7 +258,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.22002329" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -449,6 +460,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>

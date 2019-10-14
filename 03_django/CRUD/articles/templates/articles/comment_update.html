@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h2 class="text-center">Comment Update</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="">Comment update</label><br>
+        <textarea name="content" id="" cols="30" rows="10">{{ comment.content }}</textarea>
+        <!-- <input type="text" name = "content" value="{{ comment.content }}"><br> -->
+        <input type="submit" value="수정 ㄱ" class="btn btn-primary">
+
+
+    </form>
+{% endblock %}
