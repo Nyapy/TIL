@@ -2,18 +2,60 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/04_algorythm/32day/동전거스름돈 2.py" line="5" />
+    <bookmark url="file://$PROJECT_DIR$/04_algorythm/extra/(미완)9084 coin.py" line="5" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5a8390d-5d8e-4f8c-a630-b99f835dfbbf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/04_algorythm/extra/(미완)9084 coin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04_algorythm/extra/9084coin.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04_algorythm/extra/summation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/templates/articles/update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/articles/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/jobs/templates/jobs/past_life.html" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/jobs/templates/jobs/past_life.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/jobs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/jobs/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/crud/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/crud/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/crud/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/crud/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/crud/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_django/04_django_crud_review/crud/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/wallpaper-2908739.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/갓무갓키.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/04_django_crud_review/갓무갓키_9NMp6KZ.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/articles/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/articles/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/articles/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/articles/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/articles/migrations/0002_comment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/articles/migrations/0003_auto_20191008_1123.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/articles/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/articles/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/articles/templates/articles/comment_update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/articles/templates/articles/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/articles/templates/articles/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/articles/templates/articles/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/articles/templates/articles/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/articles/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/articles/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/articles/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/crud/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/crud/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/crud/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/crud/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/crud/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/jobs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/jobs/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/jobs/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/jobs/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/jobs/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/jobs/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/jobs/templates/jobs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/jobs/templates/jobs/past_life.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/jobs/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/jobs/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/jobs/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_django/CRUD/manage.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,46 +67,86 @@
     <session id="1725412191">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="3" />
-          <entry key="project.open.time.2" value="7" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.2" value="8" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="20" />
-          <entry key="txt" value="2" />
+          <entry key="py" value="26" />
+          <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="20" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4085" />
+          <entry key="dummy" value="5" />
+          <entry key="py" value="4826" />
           <entry key="txt" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="30" />
-          <entry key="Python" value="4085" />
+          <entry key="PLAIN_TEXT" value="35" />
+          <entry key="Python" value="4826" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/practice.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/04_algorythm/extra/summation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/04_algorythm/extra/(미완)9084 coin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="17" selection-start-line="12" selection-start-column="4" selection-end-line="13" selection-end-column="17" />
+              <folding>
+                <marker date="1571112940256" expanded="true" signature="63:64" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/04_algorythm/32day/동전 거스름 돈 구하기.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/04_algorythm/32day/정식이의 은행업무.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/04_algorythm/extra/9084coin.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -93,19 +175,56 @@
         <option value="$PROJECT_DIR$/04_algorythm/32day/부분수열의합.py" />
         <option value="$PROJECT_DIR$/04_algorythm/32day/정식이의 은행업무.py" />
         <option value="$PROJECT_DIR$/practice.py" />
+        <option value="$PROJECT_DIR$/04_algorythm/extra/summation.py" />
+        <option value="$PROJECT_DIR$/04_algorythm/extra/9084coin.txt" />
+        <option value="$PROJECT_DIR$/04_algorythm/extra/9084 coin.py" />
+        <option value="$PROJECT_DIR$/04_algorythm/extra/(미완)9084 coin.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TIL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TIL" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TIL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TIL" type="462c0819:PsiDirectoryNode" />
+              <item name="04_algorythm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TIL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TIL" type="462c0819:PsiDirectoryNode" />
+              <item name="04_algorythm" type="462c0819:PsiDirectoryNode" />
+              <item name="32day" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TIL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TIL" type="462c0819:PsiDirectoryNode" />
+              <item name="04_algorythm" type="462c0819:PsiDirectoryNode" />
+              <item name="extra" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/practice.py" />
@@ -123,7 +242,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.정식이의 은행업무">
+  <component name="RunManager" selected="Python.9084 coin">
     <configuration name="정식이의 은행업무" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TIL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -145,27 +264,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="동전거스름돈 2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TIL" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04_algorythm/32day" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04_algorythm/32day/동전거스름돈 2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="부분수열의합" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TIL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -179,6 +277,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04_algorythm/32day/부분수열의합.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="9084 coin" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TIL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04_algorythm/extra" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\student\TIL\04_algorythm\extra\(미완)9084 coin.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -229,18 +348,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="summation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TIL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04_algorythm/extra" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04_algorythm/extra/summation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.동전거스름돈 2" />
       <item itemvalue="Python.냅색(DP)" />
       <item itemvalue="Python.부분수열의합" />
       <item itemvalue="Python.정식이의 은행업무" />
+      <item itemvalue="Python.summation" />
+      <item itemvalue="Python.9084 coin" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.9084 coin" />
+        <item itemvalue="Python.summation" />
         <item itemvalue="Python.정식이의 은행업무" />
         <item itemvalue="Python.부분수열의합" />
         <item itemvalue="Python.냅색(DP)" />
-        <item itemvalue="Python.동전거스름돈 2" />
       </list>
     </recent_temporary>
   </component>
@@ -258,14 +400,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22002329" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2767094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32790446" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32785088" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39802632" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -321,16 +463,6 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="A" language="Python" />
-        <watch expression="mt" language="Python" />
-        <watch expression="month" language="Python" />
-        <watch expression="ans" language="Python" />
-        <watch expression="b" language="Python" />
-        <watch expression="t" language="Python" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -421,24 +553,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/04_algorythm/32day/동전 거스름 돈 구하기.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/04_algorythm/32day/냅색.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04_algorythm/32day/동전거스름돈 2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="23" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -456,17 +574,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/04_algorythm/32day/정식이의 은행업무.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/practice.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04_algorythm/32day/동전거스름돈 2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04_algorythm/extra/summation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04_algorythm/32day/동전 거스름 돈 구하기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04_algorythm/32day/정식이의 은행업무.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04_algorythm/extra/9084coin.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04_algorythm/extra/(미완)9084 coin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="17" selection-start-line="12" selection-start-column="4" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <marker date="1571112940256" expanded="true" signature="63:64" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

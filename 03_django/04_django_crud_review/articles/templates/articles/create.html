@@ -3,8 +3,8 @@
 
 {% block body %}
     <h2 class="text-center">NEW</h2>
-    <img src="{% static 'images/mago.jpg' %}" alt="mago" >
-    <img src="{% static 'articles/images/Lisa_Simpson.png' %}" alt="">
+    <img src="{% static 'images/mago.jpg' %}" alt="mago" height="600">
+    <img src="{% static 'articles/images/Lisa_Simpson.png' %}" alt="" >
     <form action="{% url 'articles:create' %}" method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         <label for="title">Title</label><br>
