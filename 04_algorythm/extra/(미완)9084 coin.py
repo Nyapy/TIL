@@ -10,5 +10,5 @@ for tc in range(1,1+T):
 
     bill = int(input())
 
-    for i in range(N):
-        change[i]
+    limit = bill//change[0]
+    for i in range(limit):

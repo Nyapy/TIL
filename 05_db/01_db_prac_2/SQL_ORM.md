@@ -128,12 +128,13 @@
    ```python
    # orm
    User.objects.get(pk=101).delete()
+   ```
 ```
    
    ```sql
    -- sql
    DELETE FROM users_user WHERE id = 101;
-   ```
+```
 
 ### 조건에 따른 쿼리문
 
@@ -236,12 +237,13 @@
    ```python
    # orm
    User.objects.filter(country='강원도', last_name='황').values('first_name')
+   ```
 ```
    
       ```sql
    -- sql
    SELECT first_name FROM users_user WHERE country = '강원도' and last_name = '황';
-      ```
+```
 
 
 
@@ -276,24 +278,26 @@
       ```python
    # orm
    User.objects.order_by('balance', '-age')[:10]
+   ```
 ```
    
    ```sql
    -- sql
    SELECT * FROM users_user ORDER BY balance ASC, age DESC LIMIT 10;
-   ```
-   
+```
+
 4. 성, 이름 내림차순 순으로 5번째 있는 사람
 
    ```python
    # orm
    User.objects.order_by('-last_name', '-first_name')[4]
+   ```
 ```
    
       ```sql
    -- sql
    SELECT * FROM users_user ORDER BY last_name DeSC, first_name DESC LIMIT 1 OFFSET 4;
-      ```
+```
 
 
 
@@ -308,50 +312,61 @@ ORM: `aggregate` 사용
 
 1. 전체 평균 나이
 
-      ```python
+   ```python
    # orm
+   User.objects.aggregate(Avg('age'))
    ```
 
       ```sql
    -- sql
+   SELECT AVG(age) FROM users_user;
       ```
 
 2. 김씨의 평균 나이
 
-      ```python
+   ```python
    # orm
+   User.objects.filter(last_name='김').aggregate(Avg('age'))
    ```
 
       ```sql
    -- sql
+   SELECT AVG(age) FROM users_user WHERE last_name = '김';
       ```
 
 3. 강원도에 사는 사람의 평균 계좌 잔고
 
    ```python
    # orm
+    User.objects.filter(country = '강원도').aggregate(Avg('balance'))
    ```
 
    ```sql
    -- sql
+   sqlite> SELECT AVG(balance) FROM users_user WHERE country = '강원도';
    ```
 
 4. 계좌 잔액 중 가장 높은 값
 
    ```python
    # orm
+   User.objects.aggregate(Max('balance'))
    ```
 
       ```sql
    -- sql
+   sqlite> SELECT MAX(balance) FROM users_user;
       ```
 
 5. 계좌 잔액 총액
 
    ```python
    # orm
+   User.objects.aggregate(Sum('balance'))
    ```
-
-      ```wsql
+```
+   
+      ```sql
    -- sql
-      ```
+   SELECT SUM(balance) FROM users_user;
+```
