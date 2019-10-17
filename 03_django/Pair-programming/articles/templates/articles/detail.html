@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <hr>
+    <p>Title: {{article.title}}</p>
+    <p>Content: {{article.content}}</p>
+    <p>Created at: {{article.created_at}}</p>
+    <p>Updated at: {{article.updated_at}}</p>
+    <hr>
+    <form action="{% url 'articles:delete' article.pk %}" method="POST">
+        {% csrf_token %}
+        <input type="Submit" value="Delete">
+    </form>
+    <a href="{% url 'articles:index' %}">Main</a>
+    <a href="{% url 'articles:update' article.pk %}">Edit</a>
+
+    <hr>
+    <form action="{% url 'articles:comment_create' article.pk %}" method="POST">
+        {% csrf_token %}
+        {{ comment_form }}
+        <input type="submit" value="Comment">
+    </form>
+    <hr>
+    {% for comment in article.comments.all %}
+        <p>comment {{ forloop.revcounter }} : {{ comment.content }}</p>
+        <form action="{% url 'articles:comment_delete' article.pk comment.pk %}" method="POST">
+            {% csrf_token %}
+            <input type="submit" value="Delete">
+        </form>
+    {% empty %}
+     <p> empty :( </p>
+    {% endfor %}
+
+
+{% endblock %}

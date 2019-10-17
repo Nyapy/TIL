@@ -26,3 +26,12 @@
         <a href="{% url 'articles:detail' article.pk %}">[글 상세보기]</a>
     {% endif %}
 {% endblock %}
+
+
+
+
+<form action="/student/create/" method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="sumbit">
+</form>

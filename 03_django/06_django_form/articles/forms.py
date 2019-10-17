@@ -45,12 +45,7 @@ class ArticleForm(forms.ModelForm):
         fields = ('title', 'content',)
 
 class CommentForm(forms.ModelForm):
-    comment = forms.TextInput(
-        attrs={
-            'class':'my-comment',
-            'placeholder':'댓글입력 ㄱ'
-        }
-    )
+
     class Meta:
         model = Comment
         fields = ('comment',)

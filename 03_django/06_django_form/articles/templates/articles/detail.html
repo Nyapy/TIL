@@ -13,11 +13,26 @@
 
 <form action="{% url 'articles:comment_create' article.pk %}" method="POST">
     {% csrf_token %}
+    <!-- {{ comment_form }} -->
     <label for="comment">Comment</label>
     <input type="text" name="comment" id="comment">
     <input type="submit" value="댓글작성">
-</form> 
-    {{ Comment_form.as_p }}
+</form>
+<hr>
+<p><b>댓글 목록</b></p>
+<p><b>현재까지 댓글 수:{{ comments.count }}</b></p>
+{% for comment in comments %}
+<div>
+    <p>댓글 {{ forloop.revcounter}} : {{comment.comment}}</p>
+    <form action="{% url 'articles:comments_delete' article.pk comment.pk %}" method="POST">
+        {% csrf_token %}
+        <input type="submit" value="댓글 삭제" class = "btn btn-warning">
+    </form>
+</div>
+{% empty %}
+<p>노댓글</p>
+{% endfor %}
+<hr>
 
 
 <a href="{% url 'articles:index' %}"> [메인]</a>
