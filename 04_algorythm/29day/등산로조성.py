@@ -31,7 +31,7 @@ for tc in range(1,1+T):
             else:
                 namu += [[i,j]]
 
-    for a in range(namu):
+    # for a in range(namu):
 
 
     print(start)

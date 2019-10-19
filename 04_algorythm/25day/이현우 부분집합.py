@@ -1,5 +1,5 @@
 N= 3
-A= []
+A= [0]*N
 data = [1,2,3]
 
 def printSet(n):
@@ -10,7 +10,6 @@ def powerset(n,k):
         printSet(n)
 
     else:
-
         A[k] = 0
         powerset(n, k+1)
         A[k] = data[k]
