@@ -1,0 +1,11 @@
+{% extends 'articles/base.html' %}
+{% load bootstrap4 %}
+
+{% block body %}
+<form action="" method="POST"> 
+    {% csrf_token %}
+    {{ form }} 
+    <br>
+    <input type="submit" value="제출">
+</form>
+{% endblock %}
