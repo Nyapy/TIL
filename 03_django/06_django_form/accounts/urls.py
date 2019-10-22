@@ -11,5 +11,4 @@ urlpatterns = [
     path('update/', views.update, name = 'update'),
     path('password/', views.change_password, name='change_password'),
 
-    path('homework/', views.homework, name = 'homework'),
 ]
