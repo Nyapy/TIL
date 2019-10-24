@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    {% for article in articles %}
+        <p> 글 번호 : {{ article.pk }}</p>
+        <p> 글 제목 : <a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a></p>
+        <hr>
+    {% endfor %}    
+
+    <a href="{% url 'articles:create' %}">최강서현(글작성)</a>
+{% endblock %}

@@ -20,7 +20,7 @@ def signup(request):
         if form.is_valid():
             user = form.save()
             auth_login(request, user)
-            # embed()
+            embed()
             return redirect('articles:index')
 
     else:
@@ -44,7 +44,7 @@ def login(request):
         form = AuthenticationForm()
 
     context = {'form':form,}
-    return render(request, 'accounts/auth_form.html', context)
+    return render(request, 'accounts/login.html', context)
 
 def logout(request):
     auth_logout(request)

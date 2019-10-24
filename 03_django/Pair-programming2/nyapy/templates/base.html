@@ -1,0 +1,20 @@
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% bootstrap_css %}
+    <title>Nyapy의 행복한 인터넷 세상</title>
+</head>
+<body>
+    <h1 class="text-center">서현이의 CRUD 세상</h1>
+    <br>
+    <div class="container">
+    {% block body %}
+
+    {% endblock %}
+    </div>
+</body>
+</html>

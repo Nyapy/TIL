@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<p>글 번호 : {{ article.pk }}</p>
+<p>글 제목 : {{ article.title }}</p>
+<p>글 내용 : {{ article.content }}</p>
+<p>작성시간 : {{ article.created_at }}</p>
+<p>수정시간 : {{ article.updated_at }}</p>
+
+<a href="{% url 'articles:index' %}">유노서현(메인)</a>
+<a href="{% url 'articles:update' article.pk %}">영웅서현(수정)</a>
+<br>
+<form action="{% url 'articles:delete' article.pk %}" method="post">
+    {% csrf_token %}
+    <input type="submit" value = "믹키서현(삭제)">
+</form>
+
+<hr>
+
+<form action="{% url 'articles:comment_create' article.pk %}" method="post">
+    {% csrf_token %}
+    {{ comment_form }}
+    <input type="submit" value='댓작성글'>
+</form>
+
+<hr>
+{% for comment in comments %}
+    {{ forloop.revcounter }}번 댓글 : {{ comment.content }}
+    <form action="{% url 'articles:comment_delete' article.pk comment.pk %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value="댓삭글제" >
+        <hr>
+    </form>
+{% endfor %}
+
+{% endblock %}
