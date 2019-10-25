@@ -12,6 +12,7 @@ def signup(request):
         form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             user=form.save()
+            auth_login(request, user)
 
     else:
         form = CustomUserCreationForm()
