@@ -1,3 +1,4 @@
+/*
 // Hoisting!
 // 나중에 선언된 변수를 참조할 수 있음
 // 함수 or statement 최상단으로 올려지는 것 (hosting)
@@ -45,3 +46,35 @@ console.log(b)
 //2. TDZ(Temporal Dead Zone) -> 임시적 사각지대
 //3. 초기화 (초기에는 값이 없기 때문에 undefined 할당)
 //4. 할당
+
+
+let foo 
+let bar = undefined
+
+console.log(foo)
+console.log(bar)
+
+x
+let x = 1
+
+y //1. 선언이 끌어올려진다. 이때 초기화가 같이 이루어지고 값이 없어서 언디파인드를 넣어준다.
+var y = 1 //2. 값이 할당된다.
+console.log(y) //3. 출력된다.
+
+if (x !== 1) {
+  console.log(y)
+  var y = 3
+  if (y===3) {
+    var x = 1
+  console.log(y)
+  }
+
+  if (x === 1) {
+    console.log(y)
+  }
+
+  x= 7
+  console.log(x)
+}
+
+*/
