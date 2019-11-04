@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.decorators.http import require_POST
 from django.contrib.auth.decorators import login_required
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponseBadRequest
 from django.contrib.auth import get_user_model
 from .models import Article, Comment, Hashtag
 from .forms import ArticleForm, CommentForm
@@ -167,24 +167,27 @@ def comments_delete(request, article_pk, comment_pk):
 
 @login_required
 def like(request, article_pk):
-    article = get_object_or_404(Article, pk=article_pk)
-    user = request.user
+    if request.is_ajax():
+        article = get_object_or_404(Article, pk=article_pk)
+        user = request.user
 
-    # 해당 게시글에 좋아요를 누른 사람들 중에서 user.pk(현재 요청 유저)를 가진 user가 존재하면
-    if article.like_users.filter(pk=user.pk).exists():
-        # 좋아요 취소
-        article.like_users.remove(user)
-        liked = False
-    # 존재하지 않는 다면 좋아요를 누른 유저 목록에 유저 추가
+        # 해당 게시글에 좋아요를 누른 사람들 중에서 user.pk(현재 요청 유저)를 가진 user가 존재하면
+        if article.like_users.filter(pk=user.pk).exists():
+            # 좋아요 취소
+            article.like_users.remove(user)
+            liked = False
+        # 존재하지 않는 다면 좋아요를 누른 유저 목록에 유저 추가
+        else:
+            # 좋아요 누름
+            article.like_users.add(user)
+            liked = True
+        context = {
+            'liked' : liked,
+            'count' : article.like_users.count(),
+        }
+        return JsonResponse(context)
     else:
-        # 좋아요 누름
-        article.like_users.add(user)
-        liked = True
-    context = {
-        'liked' : liked,
-        'count' : article.like_users.count(),
-    }
-    return JsonResponse(context)
+        return HttpResponseBadRequest()
 
 @login_required
 def follow(request, article_pk, user_pk):
