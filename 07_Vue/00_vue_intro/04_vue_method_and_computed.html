@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <button @click="visible = !visible">Toggle</button>
+    <ul v-if="visible">
+      <li>dateMethod: {{ dateMethod() }}</li>
+      <li>dateComputed: {{dateComputed}}</li> 
+      <!-- 괄호의 유무는 저장된것이냐 아니냐의 차이임 -->
+    </ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data:{
+        visible: true,
+      },
+      methods: {
+        dateMethod: function() {
+          return new Date() 
+        }
+      },
+      computed:{
+        dateComputed: function() {
+          return new Date()
+        }
+      }
+    })
+
+  </script>
+</body>
+</html>
