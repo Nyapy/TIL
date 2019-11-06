@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <h2>★2류 도훈★의 프로젝트</h2>
+    <my-todo-list category="하고싶은일"></my-todo-list>
+    <my-todo-list category="해야하는일"></my-todo-list>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    Vue.component('my-todo-list', {
+      template:`
+      <div class="my-todo-list">
+        <h2  v-bind:style="{color : titleColor}">{{ category }}</h2>
+        <input type="text" v-model='newTodo'>
+        <button @click='addTodo'>입력</button>
+        <ol>
+          <li v-for="todo in todos" >{{ todo.content }}, {{ todo.todayDate }} <button @click='removeTodo(todo.id)'>삭제</button></li>
+        </ol> 
+      </div>
+      `,
+      props : ['category'],
+
+      data: function() {
+        return {
+          todos : [],
+          newTodo: '',
+          todayDate: Date(),
+          titleColor: 'Blue',
+        }
+      },
+      methods: {
+        addTodo : function() {
+          if (this.newTodo.length !== 0){
+            this.todos.push({
+              id : Date.now(),
+              content : this.newTodo,
+              todayDate: this.todayDate,
+            }),
+            this.newTodo = ''
+          }
+        },
+        removeTodo : function(todoId){
+          this.todos = this.todos.filter((todo) => {
+            return todo.id != todoId
+          })
+        },   
+      }
+    })
+    
+    const app = new Vue({
+      el:'#app',
+
+    })
+  </script>
+</body>
+</html>

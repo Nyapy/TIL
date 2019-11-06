@@ -61,6 +61,7 @@
       methods: {
 				addTodo: function() {
           if (this.newTodo.length !== 0) {
+            console.log(this)
             this.todos.push({
               id: Date.now(),
               content: this.newTodo,
