@@ -8,27 +8,29 @@
 </head>
 <body>
   <div id="app">
-    <button v-on:click="getDogImage">멍멍</button>
-      <br>
-      <img v-bind:src="image">
+    <button>Get Posts!</button>
+    <ul>
+      <li v-for="(post, idx) in posts" :key="idx">
+        <b>{{ post.title }}</b> - {{ post.body }}
+      </li>
+    </ul>
   </div>
 
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script>
     const app = new Vue({
-      el : '#app',
-      data : {
-        image: '',
+      el:"#app",
+      data: {
+        posts: [],
       },
-      
       methods: {
-        getDogImage : function() {
-          const URL = "https://dog.ceo/api/breeds/image/random"
-          axios.get(URL)
+        getPosts() {
+          axios.get('https://jsonplaceholder.typicode.com/posts')
           .then(res => {
-            this.image = res.data.message
+            this.posts = res.data
           })
+          
         }
       }
     })

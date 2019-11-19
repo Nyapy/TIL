@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  img {
+    width : 300px;
+    height: 300;
+  }
+    </style>
+</head>
+<body>
+  <div id="app">
+    <div>
+      <!-- <select v-model="count">
+        <option value="1" selected>1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select> -->
+
+      <select v-model="count">
+        <option v-for="n in 9">{{ n }}</option>
+      </select>
+
+      <button v-on:click="getDogImage">Get {{ count }} Dogs</button>
+        <br>
+    </div>
+    <div>
+        <img v-for="image in images" v-bind:src="image">
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    const app = new Vue({
+      el : '#app',
+      data : {
+        images: [],
+        count : 1,
+        numbers: 9
+      },
+      methods: {
+        getDogImage() {
+          axios.get(`https://dog.ceo/api/breeds/image/random/${this.count}`)
+          .then(res => {
+            this.images = res.data.message
+          })
+        }
+        // getDogImage : function() {
+        //   this.images = []
+        //   const URL = "https://dog.ceo/api/breeds/image/random"
+        //   axios.get(URL)
+        //   .then(res => {
+        //     this.images.push(res.data.message)
+        //   })
+        // }
+      }
+    })
+  </script>
+
+</body>
+</html>
