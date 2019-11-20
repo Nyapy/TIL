@@ -12,7 +12,9 @@ import TodoList from '@/components/TodoList'
 import TodoInput from '@/components/TodoInput'
 
 import axios from 'axios'
-import jwtDecode from 'jwt-decode'
+// Object descructuring
+import { mapGetters } from 'vuex'
+// import jwtDecode from 'jwt-decode'
 
 export default {
   name: 'home',
@@ -25,25 +27,33 @@ export default {
       todos: [],
     }
   },
+  computed: {
+    ...mapGetters([
+      'isLoggedIn',
+      'requestHeader',
+      'userId'
+    ])
+  },
   methods: {
     checkLoggedIn() {
-      this.$session.start()
-      if (!this.$session.has('jwt')) {
+      // this.$session.start()
+      // if (!this.$session.has('jwt')) {
+      if (!this.isLoggedIn) {
         router.push('/login')
       }
     },
   
     getTodos() {
-      this.$session.start()
-      const token = this.$session.get('jwt')
-      console.log(token)
-      const requestHeader = {
-        headers: {
-          Authorization: 'JWT '+ token
-        }
-      }
-      const user_id = jwtDecode(token).user_id
-      axios.get(`http://127.0.0.1:8000/api/v1/users/${user_id}/`, requestHeader)
+      // this.$session.start()
+      // const token = this.$session.get('jwt')
+      // console.log(token)
+      // const requestHeader = {
+      //   headers: {
+      //     Authorization: 'JWT '+ token
+      //   }
+      // }
+      // const user_id = jwtDecode(token).user_id
+      axios.get(`http://127.0.0.1:8000/api/v1/users/${this.userId}/`, this.requestHeader)
       .then(res => {
         console.log(res)
         this.todos = res.data.todo_set
@@ -53,20 +63,21 @@ export default {
       })
     },
     createTodo(title) {
-      this.$session.start()
-      const token = this.$session.get('jwt')
-      const requestHeader = {
-        headers: {
-          Authorization: 'JWT '+token
-        }
-      }
-      const user_id = jwtDecode(token).user_id
+      // this.$session.start()
+      // const token = this.$session.get('jwt')
+      // const requestHeader = {
+      //   headers: {
+      //     Authorization: 'JWT '+token
+      //   }
+      // }
+      // const user_id = jwtDecode(token).user_id
+
       //requestForm -> 빈 Object
       const requestForm = new FormData()
-      requestForm.append('user', user_id)
+      requestForm.append('user', this.userId)
       requestForm.append('title', title)
 
-      axios.post('http://127.0.0.1:8000/api/v1/todos/', requestForm, requestHeader)
+      axios.post('http://127.0.0.1:8000/api/v1/todos/', requestForm, this.requestHeader)
       .then(res => {
         this.todos.push(res.data)
         console.log(res)
