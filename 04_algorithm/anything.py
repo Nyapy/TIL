@@ -20,6 +20,6 @@ def reverse(x, k, rev, bef):
     mal_on[x] = bef
 rev = [3,1,5,4,2]
 
-reverse(rev[-1],0, rev,rev[-1])
-print(mal_on)
-print(rev)
+cnt = 5//2
+
+print(cnt)
