@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5a8390d-5d8e-4f8c-a630-b99f835dfbbf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/07_Vue/00_vue_intro/03_vue_directive_prac.html" beforeDir="false" afterPath="$PROJECT_DIR$/07_Vue/00_vue_intro/03_vue_directive_prac.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_Vue/04_vue_youtobe_thumbnail_project/youtube-browser/src/components/homeworkshop.vue" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/04_algorithm/백준/아기상어.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04_algorithm/백준/아기상어.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,18 +51,81 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1393794264">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="js" value="6" />
+          <entry key="py" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JavaScript" value="6" />
+          <entry key="Python" value="15" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/04_algorithm/sw4/dessertcaffe.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/05_db/01_db_prac_2/users/models.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/05_db/01_db_prac_2/users/tests.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/05_db/01_db_prac_2/users/apps.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/05_db/01_db_prac_2/sql/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-              <folding>
-                <marker date="1573800375211" expanded="true" signature="83:93" ph="..." />
-              </folding>
-            </state>
+            <state relative-caret-position="-1806" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/06_JS/00_js_intro/00_js_start.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/06_JS/00_js_intro/01_hoisting.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/06_JS/00_js_intro/02_type_operator.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/06_JS/00_js_intro/03_if_loop.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/06_JS/00_js_intro/04_function.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/06_JS/00_js_intro/05_data_structure.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2153" />
           </provider>
         </entry>
       </file>
@@ -116,9 +181,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -128,6 +193,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,39 +204,18 @@
             <path>
               <item name="TIL" type="b2602c69:ProjectViewProjectNode" />
               <item name="TIL" type="462c0819:PsiDirectoryNode" />
-              <item name="04_algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="07_Vue" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TIL" type="b2602c69:ProjectViewProjectNode" />
               <item name="TIL" type="462c0819:PsiDirectoryNode" />
-              <item name="04_algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="sw4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TIL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TIL" type="462c0819:PsiDirectoryNode" />
-              <item name="04_algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="sw4" type="462c0819:PsiDirectoryNode" />
-              <item name="디저트카페_특이한자석" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TIL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TIL" type="462c0819:PsiDirectoryNode" />
-              <item name="04_algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="sw문제" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TIL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TIL" type="462c0819:PsiDirectoryNode" />
-              <item name="04_algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="sw문제" type="462c0819:PsiDirectoryNode" />
-              <item name="연구소_게리멘더링_다리만들기2" type="462c0819:PsiDirectoryNode" />
+              <item name="07_Vue" type="462c0819:PsiDirectoryNode" />
+              <item name="02_vue_webpack" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -331,10 +376,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22497366" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2247191" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -488,32 +532,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/04_algorythm/26day/백서현 순열.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/codecs.py" />
-    <entry file="file://$PROJECT_DIR$/04_algorythm/04day/부분집합의 합.py" />
-    <entry file="file://$PROJECT_DIR$/04_algorythm/02day/구간합.py" />
-    <entry file="file://$PROJECT_DIR$/04_algorythm/04day/2.+List2_실습/부분집합의합.py" />
-    <entry file="file://$PROJECT_DIR$/04_algorythm/03day/부분집합2.py" />
-    <entry file="file://$PROJECT_DIR$/04_algorythm/03day/2.+List2_연습/연습2_부분집합의합.py" />
-    <entry file="file://$PROJECT_DIR$/04_algorythm/03day/부분집합.py" />
-    <entry file="file://$PROJECT_DIR$/04_algorythm/10day/2부분집합.py" />
-    <entry file="file://$PROJECT_DIR$/04_algorythm/31day/수영장.py" />
-    <entry file="file://$PROJECT_DIR$/04_algorythm/31day/수영장.txt" />
-    <entry file="file://$PROJECT_DIR$/04_algorythm/32day/거스름돈.txt" />
-    <entry file="file://$PROJECT_DIR$/04_algorythm/32day/냅색.py" />
-    <entry file="file://$PROJECT_DIR$/04_algorythm/32day/냅색(DP).py" />
-    <entry file="file://$PROJECT_DIR$/04_algorythm/32day/부분수열의합.py" />
-    <entry file="file://$PROJECT_DIR$/practice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04_algorythm/32day/동전거스름돈 2.py" />
-    <entry file="file://$PROJECT_DIR$/04_algorythm/extra/summation.py" />
-    <entry file="file://$PROJECT_DIR$/04_algorythm/extra/(미완)9084 coin.py" />
-    <entry file="file://$PROJECT_DIR$/04_algorythm/32day/동전 거스름 돈 구하기.py" />
     <entry file="file://$PROJECT_DIR$/04_algorythm/32day/정식이의 은행업무.py" />
     <entry file="file://$PROJECT_DIR$/04_algorythm/extra/9084coin.txt" />
     <entry file="file://$PROJECT_DIR$/04_algorithm/sw2/makenum.py">
@@ -605,13 +623,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/04_algorithm/sw4/.txt" />
-    <entry file="file://C:/Program Files/python353/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="310" selection-start-line="310" selection-end-line="310" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Program Files/python353/Lib/codecs.py" />
     <entry file="file://$PROJECT_DIR$/04_algorithm/sw4/specialmagnet.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1755">
@@ -630,10 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="70" column="24" lean-forward="true" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
-          <folding>
-            <marker date="1573706842616" expanded="true" signature="74:1632" ph="..." />
-            <marker date="1573706842616" expanded="true" signature="1656:2251" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -675,13 +683,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/04_algorithm/sw4/dessert.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="104" column="55" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/04_algorithm/sw4/dessert.txt" />
     <entry file="file://$PROJECT_DIR$/04_algorithm/sw문제/연구소_게리멘더링_다리만들기2/(백준)17472_다리만들기2.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -695,11 +697,99 @@
     <entry file="file://$PROJECT_DIR$/04_algorithm/sw4/dessertcaffe.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00_StartCamp/03_day/00_problom_set_list.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00_StartCamp/03_day/03_flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <marker date="1573800375211" expanded="true" signature="83:93" ph="..." />
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00_StartCamp/01_Day/01_naver_kospi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00_StartCamp/01_Day/02_naver_exchange.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00_StartCamp/01_Day/03_naver_real_time_search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00_StartCamp/02_Day/00_string_format.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00_StartCamp/02_Day/01_dummy.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00_StartCamp/02_Day/02_file_contlrol.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00_StartCamp/02_Day/03_txt_write.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00_StartCamp/02_Day/04_txt_read.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/00_StartCamp/02_Day/05_reverse_content.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05_db/01_db_prac_2/users/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05_db/01_db_prac_2/users/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05_db/01_db_prac_2/users/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05_db/01_db_prac_2/sql/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1806" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_JS/00_js_intro/00_js_start.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_JS/00_js_intro/01_hoisting.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_JS/00_js_intro/02_type_operator.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_JS/00_js_intro/03_if_loop.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_JS/00_js_intro/04_function.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_JS/00_js_intro/05_data_structure.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2153" />
       </provider>
     </entry>
   </component>

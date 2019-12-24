@@ -20,6 +20,12 @@ def reverse(x, k, rev, bef):
     mal_on[x] = bef
 rev = [3,1,5,4,2]
 
-cnt = 5//2
 
-print(cnt)
+dist = list([[]])*10
+dist2 = [[] for _ in range(10)]
+print(dist)
+
+dist[2] += [2]
+dist2[2] += [2]
+print(dist)
+print(dist2)
