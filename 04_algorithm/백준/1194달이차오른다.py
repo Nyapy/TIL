@@ -77,9 +77,9 @@ for i in range(N):
         if laby[i][j] == "0":
             minsic = [j,i]
             laby[i][j] = "."
-# print(visited)
-#
-# print(list(map(ord, ["a", "f", "A", "F"])))
+
+
+
 def bfs(x,y,d,dist):
     global result
     visited[d][y][x] = dist
@@ -92,7 +92,7 @@ def bfs(x,y,d,dist):
             ny = t[1] + dy[k]
             d = t[2]
             dist = t[3]
-            if 0 <= nx <M and 0 <= ny <N and visited[d][ny][nx] == 999999:
+            if 0 <= nx <M and 0 <= ny <N :
                 if laby[ny][nx] == '.':
                     if visited[d][ny][nx] > 1 + dist:
                         visited[d][ny][nx] = 1 + dist
@@ -117,6 +117,7 @@ def bfs(x,y,d,dist):
                         visited[d][ny][nx] = 1+dist
                         if result > visited[d][ny][nx]:
                             result = visited[d][ny][nx]
+
 result = 999999
 bfs(minsic[0],minsic[1],0,0)
 if result == 999999:
