@@ -2,6 +2,7 @@ from collections import deque
 import sys
 from copy import deepcopy
 
+sys.stdin = open("1600말이되고픈원숭이.txt")
 
 def bfs():
     Q = deque([(0, 0, 0, K)])
@@ -29,8 +30,9 @@ def bfs():
 
 
 K = int(sys.stdin.readline())
-W, H = map(int, sys.stdin.readline().split())
-nl = [list(map(int, sys.stdin.readline().split())) for _ in range(H)]
+W, H = map(int, input().split())
+nl = [list(map(int, input().split())) for _ in range(H)]
+
 ml = []
 for k in range(K+1):
     ml.append(deepcopy(nl))
