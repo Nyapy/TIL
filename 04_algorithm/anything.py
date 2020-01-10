@@ -36,3 +36,8 @@ data = [[0] * (M) for _ in range(M)]
 data[1][1] =1
 
 print(data)
+
+a = 15
+for i in range(4):
+    if a & (1 << i):
+        print(i)
