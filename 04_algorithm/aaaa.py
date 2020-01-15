@@ -1,16 +1,8 @@
-class Korea:
-    def __init__(self, name,population, captial):
-        self.name = name
-        self.population = population
-        self.capital = captial
-
-    def show(self):
-        print(
-            """
-            국가의 이름은 {} 입니다.
-            국가의 인구는 {} 입니다.
-            국가의 수도는 {} 입니다.
-            """.format(self.name, self.population, self.capital)
-        )
-    def show2(self, abc):
-        print('abc :', abc)
+N = 3
+T = list(range(N+1))
+print(T)
+for i in range(1,1<<N):
+    for j in range(N):
+        if i & (1<<j):
+            print(T[j], end=" ")
+    print()
