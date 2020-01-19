@@ -6,3 +6,4 @@ for i in range(1,1<<N):
         if i & (1<<j):
             print(T[j], end=" ")
     print()
+
