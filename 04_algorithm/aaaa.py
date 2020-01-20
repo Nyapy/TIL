@@ -7,3 +7,4 @@ for i in range(1,1<<N):
             print(T[j], end=" ")
     print()
 
+
