@@ -8,3 +8,5 @@ for i in range(1,1<<N):
     print()
 
 
+a = [1,2]
+
