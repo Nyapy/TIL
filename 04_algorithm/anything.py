@@ -41,3 +41,9 @@ a = 15
 for i in range(4):
     if a & (1 << i):
         print(i)
+
+A = '12345'
+
+A[2] = 1
+
+print(A)
