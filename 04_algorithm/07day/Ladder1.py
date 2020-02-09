@@ -21,13 +21,20 @@ for tc in range(1,T+1):
             break
 
     while y > 0:
-        for a in range(3):
-            leddar[y][x] = 0
-            x = x + dx[a]
-            y = y + dy[a]
-            if x >= 0 and y > 0 and x < 100 :
-                if leddar[y][x] == 1:
-                    break
+        if y == 99:
+            leddar[y][x] = 3
+            x = x + dx[2]
+            y = y + dy[2]
+        else:
+            for a in range(3):
+                x = x + dx[a]
+                y = y + dy[a]
+                if x >= 0 and y > 0 and x < 100 :
+                    if leddar[y][x] == 1:
+                        leddar[y][x] = 0
+                        break
+
+
 
     print('#{} {}'.format(tc, x))
 
