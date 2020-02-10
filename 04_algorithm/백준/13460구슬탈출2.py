@@ -4,99 +4,106 @@ sys.stdin = open("13460.txt")
 
 N,M = map(int, input().split())
 
-board = [input() for _ in range(N)]
+board = [list(input()) for _ in range(N)]
 
-print(board)
+dx = [0,-1,0,1]
+dy = [1,0,-1,0]
 
-dx = [0,1,0,-1]
-dy = [-1,0,1,0]
-#상우하좌
-direction = 0
+red = [0,0,0]
+blue = [0,0,1]
 
-result = 11
 def where():
-    r = 0
+    g = 0
     for i in range(N):
         for j in range(M):
             if board[i][j] == 'R':
-                red = [j,i,1]
-                r += 1
+                red[0],red[1] = j,i
+                board[i][j] = '.'
+                g+=1
             elif board[i][j] == 'B':
-                blue = [j,i,0]
-                r+= 1
-            if r == 2:
-                return [red,blue]
-
-
-def first(rx,ry,bx,by,d):
-    flag = 0
-    #빨강이 먼저면 flag =1
-    if d == 0:
-        if ry < by:
-            flag = 1
-    elif d == 1:
-        if rx > by:
-            flag = 1
-    elif d == 2:
-        if ry > by :
-            flag = 1
-    elif d == 3:
-        if rx< bx :
-            flag = 1
-    return flag
-
-def start(red, blue, k):
-    global result
-    if k == 11:
-        return
-
-    for i in range(4):
-        succ = -1
-        q=[]
-        redx,redy,rc = red[0],red[1],1
-        bluex,bluey, bc = blue[0],blue[1],0
-
-        f=first(red[0], red[1], blue[0], blue[1], i)
-        if f :
-            q.append(red)
-            q.append(blue)
-        else:
-            q.append(blue)
-            q.append(red)
-
-        while q:
-            t= q.pop(0)
-            nx = t[0]+dx[i]
-            ny = t[1] +dy[i]
-            c = t[2]
-
-            if board[nx][ny] == '.' or board[nx][ny] == 'R' or board[nx][ny] == 'B':
-                q.append([nx,ny,c])
-                redx, redy = red[0], red[1]
-                bluex, bluey = blue[0], blue[1]
-
-            elif board[nx][ny] == 'O':
-                if c == 1:
-                    succ = 1
-                elif c == 0:
-                    succ = 0
-
-        if succ ==1:
-            if result > k:
-                result = k
+                blue[0],blue[1] = j,i
+                board[i][j] ='.'
+                g+=1
+            if g == 2:
                 return
-        elif succ == 0:
-            return
-        start([redx,redy,rc],[bluex,bluey,bc],k+1)
 
+where()
+print(red,blue)
 
-a= where()
+def first(red,blue,direc):
+    first = 0
+    rx = red[0]
+    ry = red[1]
+    bx = blue[0]
+    by = blue[1]
 
-start(a[0], a[1], 1)
+    if direc == 0:
+        if by > ry:
+            first = 1
 
-if result == 11:
-    print(-1)
-else:
-    print(result)
+    elif direc ==1:
+        if bx < rx:
+            first = 1
 
+    elif direc == 2:
+        if by < ry:
+            first = 1
 
+    elif direc == 3:
+        if bx > rx:
+            first = 1
+    return first
+
+def go(red,blue):
+    turn = 1
+    bids = [[red[0],red[1],0],[blue[0],blue[1],1],turn]
+    q = []
+    q.append(bids)
+
+    while q:
+        t= q.pop(0)
+        red = t[0]
+        blue = t[1]
+        tu = t[2]
+
+        for k in range(4):
+            a = first(red,blue,k)
+            if a:
+                one = blue
+                two = red
+            else:
+                one = red
+                two = blue
+            can = 0
+            one = move(one[0],one[1],two[0],two[1],k,one[2])
+            two = move(two[0],two[1],one[0],one[1],k,two[2])
+            if can == 2:
+                return tu
+            elif can == 0:
+                if tu+1 <= 10:
+                    q.append([one,two,tu+1])
+        turn +=1
+    return -1
+def move(x,y, ex,ey, d, color):
+    global can
+    tx = x
+    ty = y
+    while 1:
+        nx = tx + dx[d]
+        ny = ty + dy[d]
+
+        if board[ny][nx] == '#' or (nx == ex and ny == ey):
+            return [tx,ty]
+
+        elif board[ny][nx] == "O":
+            if color == 0:
+                can += 2
+            else:
+                can += 1
+
+        else:
+            tx = nx
+            ty = ny
+
+can = 0
+print(go(red,blue))
