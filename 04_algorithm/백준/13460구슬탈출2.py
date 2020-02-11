@@ -40,21 +40,19 @@ def first(red,blue,direc):
     if direc == 0:
         if by > ry:
             first = 1
-
     elif direc ==1:
         if bx < rx:
             first = 1
-
     elif direc == 2:
         if by < ry:
             first = 1
-
     elif direc == 3:
         if bx > rx:
             first = 1
     return first
 
 def go(red,blue):
+    global can
     turn = 1
     bids = [[red[0],red[1],0],[blue[0],blue[1],1],turn]
     q = []
@@ -82,7 +80,6 @@ def go(red,blue):
             elif can == 0:
                 if tu+1 <= 10:
                     q.append([one,two,tu+1])
-        turn +=1
     return -1
 def move(x,y, ex,ey, d, color):
     global can
@@ -93,13 +90,15 @@ def move(x,y, ex,ey, d, color):
         ny = ty + dy[d]
 
         if board[ny][nx] == '#' or (nx == ex and ny == ey):
-            return [tx,ty]
+            return [tx,ty,color]
 
         elif board[ny][nx] == "O":
             if color == 0:
                 can += 2
+                return [tx,ty,color]
             else:
                 can += 1
+                return [tx,ty,color]
 
         else:
             tx = nx
