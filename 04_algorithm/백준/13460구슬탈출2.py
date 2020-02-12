@@ -12,6 +12,7 @@ dy = [1,0,-1,0]
 red = [0,0,0]
 blue = [0,0,1]
 
+visited=set()
 def where():
     g = 0
     for i in range(N):
@@ -28,7 +29,7 @@ def where():
                 return
 
 where()
-print(red,blue)
+# print(red,blue)
 
 def first(red,blue,direc):
     first = 0
@@ -54,6 +55,7 @@ def first(red,blue,direc):
 def go(red,blue):
     global can
     turn = 1
+    visited.add((red[0], red[1], blue[0], blue[1]))
     bids = [[red[0],red[1],0],[blue[0],blue[1],1],turn]
     q = []
     q.append(bids)
@@ -79,7 +81,9 @@ def go(red,blue):
                 return tu
             elif can == 0:
                 if tu+1 <= 10:
-                    q.append([one,two,tu+1])
+                    if (one[0],one[1],two[0],two[1]) not in visited:
+                        visited.add((one[0],one[1],two[0],two[1]))
+                        q.append([one,two,tu+1])
     return -1
 def move(x,y, ex,ey, d, color):
     global can
@@ -90,7 +94,7 @@ def move(x,y, ex,ey, d, color):
         ny = ty + dy[d]
 
         if board[ny][nx] == '#' or (nx == ex and ny == ey):
-            return [tx,ty,color]
+            return [-1,-1,color]
 
         elif board[ny][nx] == "O":
             if color == 0:
