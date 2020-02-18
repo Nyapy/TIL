@@ -1,7 +1,7 @@
 import sys
-
+import time
 sys.stdin = open('최소이동거리.txt')
-
+str_time = time.time()
 T = int(input())
 
 def mst(v):
@@ -28,3 +28,5 @@ for tc in range(1,1+T):
     mst(0)
 
     print('#{} {}' .format(tc, visited[N]))
+
+print(time.time()-str_time)

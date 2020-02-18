@@ -7,8 +7,8 @@ T = int(input())
 def prim(v):
     total = 0
     u = v
-    for a in range(V+1):
-        minv = 1111111111111
+    for a in range(V):
+        minv = 11111111111111
         gajoong[u] = 0
         visited[u] = 1
 
