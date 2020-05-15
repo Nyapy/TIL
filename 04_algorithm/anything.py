@@ -44,6 +44,13 @@ for i in range(4):
 
 A = '12345'
 
-A[2] = 1
+# A[2] = 1
 
 print(A)
+
+aaa = [1,2,3]
+
+from itertools import combinations
+bbb = list(combinations(aaa,3))
+
+print(bbb)
