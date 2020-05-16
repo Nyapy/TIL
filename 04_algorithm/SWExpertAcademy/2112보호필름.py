@@ -78,24 +78,19 @@ def AB(s,n,k,A):
             AB(s,n+1,k,A)
 
 
-for tc in range(1):
+for tc in range(1,1+T):
     D,W,K = map(int, input().split())
 
     film = [list(map(int, input().split())) for _ in range(D)]
     ans = 0
-    select = range(D)
+    select = [0]*D
     flag = False
     if K == 1:
         ans = 0
     else:
-        # for i in range(1+D):
-        #     comb(i,0,0)
-        #     if flag:
-        #         break
         for i in range(1+D):
+            comb(i,0,0)
             if flag:
                 break
-            a=combinations(select, i)
 
-            for j in a:
     print("#{} {}" .format(tc, ans))
