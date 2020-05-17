@@ -7,22 +7,24 @@
 # ch = ','.join(c)
 #
 # print(ch)
-num = 5
-def A():
-    global num
-    print(num)
-    num = 2
-    print(num)
-    B()
+# num = 5
+# def A():
+#     global num
+#     print(num)
+#     num = 2
+#     print(num)
+#     B()
+#
+# def B():
+#     global num
+#     print(num)
+#     num = 1
+#     print(num)
+#
+# print(num)
+#
+# A()
+#
+# print(num)
 
-def B():
-    global num
-    print(num)
-    num = 1
-    print(num)
-
-print(num)
-
-A()
-
-print(num)
+print("42" > "4")
