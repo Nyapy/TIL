@@ -27,4 +27,10 @@
 #
 # print(num)
 
-print("42" > "4")
+# print("42" > "4")
+
+
+aaa = [1,2,33,44,11]
+aaa = aaa[:2]
+
+print(aaa)
