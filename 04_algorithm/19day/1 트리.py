@@ -4,7 +4,7 @@ sys.stdin = open('1 트리.txt')
 
 a = list(map(int, input().split()))
 
-Tree = [[0]*3 for _ in range(max(a))]
+Tree = [[0]*3 for _ in range(max(a)+1)]
 
 def preorder(v):
 

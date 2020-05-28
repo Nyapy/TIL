@@ -13,7 +13,7 @@ def comb(n,k,q):
         com[k] = 1
         comb(n, k+1, q+1)
         com[k] = 0
-        comb3q(n, k+1, q)
+        comb(n, k+1, q)
 
 com = [0] * N
 
