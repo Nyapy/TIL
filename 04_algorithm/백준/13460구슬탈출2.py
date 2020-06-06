@@ -1,4 +1,5 @@
 import sys
+from collections import deque
 
 sys.stdin = open("13460.txt")
 
@@ -6,107 +7,116 @@ N,M = map(int, input().split())
 
 board = [list(input()) for _ in range(N)]
 
-dx = [0,-1,0,1]
-dy = [1,0,-1,0]
+dx = [-1,0,1,0]
+dy = [0,-1,0,1]
 
-red = [0,0,0]
-blue = [0,0,1]
+visited = [[[[0 for _ in range(10)] for _ in range(10)] for _ in range(10)]for _ in range(10)]
 
-visited=set()
-def where():
-    g = 0
-    for i in range(N):
-        for j in range(M):
-            if board[i][j] == 'R':
-                red[0],red[1] = j,i
-                board[i][j] = '.'
-                g+=1
-            elif board[i][j] == 'B':
-                blue[0],blue[1] = j,i
-                board[i][j] ='.'
-                g+=1
-            if g == 2:
-                return
+for i in range(N):
+    for j in range(M):
+        if board[i][j] == 'R':
+            board[i][j] = '.'
+            red = [j,i]
+        elif board[i][j] == 'B':
+            board[i][j] = '.'
+            blue = [j, i]
 
-where()
-# print(red,blue)
+q = deque()
+visited[red[0]][red[1]][blue[0]][blue[1]] = 1
+# print(board)
+for k in range(4):
+    q.append(red+blue+[k,0])
 
-def first(red,blue,direc):
-    first = 0
-    rx = red[0]
-    ry = red[1]
-    bx = blue[0]
-    by = blue[1]
+ans = -1
 
-    if direc == 0:
-        if by > ry:
-            first = 1
-    elif direc ==1:
-        if bx < rx:
-            first = 1
-    elif direc == 2:
-        if by < ry:
-            first = 1
-    elif direc == 3:
-        if bx > rx:
-            first = 1
-    return first
-
-def go(red,blue):
-    global can
-    turn = 1
-    visited.add((red[0], red[1], blue[0], blue[1]))
-    bids = [[red[0],red[1],0],[blue[0],blue[1],1],turn]
-    q = []
-    q.append(bids)
-
-    while q:
-        t= q.pop(0)
-        red = t[0]
-        blue = t[1]
-        tu = t[2]
-
-        for k in range(4):
-            a = first(red,blue,k)
-            if a:
-                one = blue
-                two = red
-            else:
-                one = red
-                two = blue
-            can = 0
-            one = move(one[0],one[1],two[0],two[1],k,one[2])
-            two = move(two[0],two[1],one[0],one[1],k,two[2])
-            if can == 2:
-                return tu
-            elif can == 0:
-                if tu+1 <= 10:
-                    if (one[0],one[1],two[0],two[1]) not in visited:
-                        visited.add((one[0],one[1],two[0],two[1]))
-                        q.append([one,two,tu+1])
-    return -1
-def move(x,y, ex,ey, d, color):
-    global can
-    tx = x
-    ty = y
-    while 1:
-        nx = tx + dx[d]
-        ny = ty + dy[d]
-
-        if board[ny][nx] == '#' or (nx == ex and ny == ey):
-            return [-1,-1,color]
-
-        elif board[ny][nx] == "O":
-            if color == 0:
-                can += 2
-                return [tx,ty,color]
-            else:
-                can += 1
-                return [tx,ty,color]
-
+def first(rx,ry,bx,by,d):
+    if d == 0:
+        if rx < bx:
+            return False
+        else :
+            return True
+    elif d == 1:
+        if ry < by :
+            return False
         else:
-            tx = nx
-            ty = ny
+            return True
+    elif d == 2:
+        if rx > bx:
+            return False
+        else:
+            return True
+    elif d == 3:
+        if ry > by:
+            return False
+        else:
+            return True
+# print(q)
+while q:
+    rx, ry, bx, by, di, turn = q.popleft()
+    if turn == 11:
+        break
+    flag = 1
+    suc = 0
 
-can = 0
-print(go(red,blue))
+    f = first(rx,ry,bx,by,di)
+    if f == False:
+        tx, ty = rx,ry
+        ax, ay = bx, by
+        tx2, ty2 = bx, by
+
+    else:
+        tx, ty = bx,by
+        ax, ay = rx, ry
+        tx2, ty2 = rx, ry
+
+    while flag:
+        nx, ny = tx+dx[di], ty+dy[di]
+        if board[ny][nx] == '#' or (nx == ax and ny == ay):
+            if f == False:
+                rx, ry = tx, ty
+                ax, ay = tx, ty
+            else:
+                bx, by = tx, ty
+                ax, ay = tx, ty
+
+            break
+        elif board[ny][nx] == '.':
+            tx, ty = nx, ny
+
+        elif board[ny][nx] == 'O':
+            if f == False:
+                suc = 1
+            else:
+                suc = 2
+            break
+
+    flag = 1
+
+    while flag:
+        nx2, ny2 = tx2+dx[di], ty2+dy[di]
+        if board[ny2][nx2] == '#' or (nx2 == ax and ny2 == ay):
+            if f == False:
+                bx, by = tx2, ty2
+            else:
+                rx, ry = tx2, ty2
+            break
+        elif board[ny2][nx2] == '.':
+            tx2, ty2 = nx2, ny2
+
+        elif board[ny2][nx2] == 'O':
+            if f == False:
+                suc = 2
+            else:
+                suc = 1
+            break
+
+    if suc == 0:
+        if visited[rx][ry][bx][by] == 0 :
+            visited[rx][ry][bx][by] = turn+1
+            for k in range(4):
+                q.append([rx,ry,bx,by,k,turn+1])
+    elif suc == 1:
+        ans = turn+1
+        break
+
+print(ans)
