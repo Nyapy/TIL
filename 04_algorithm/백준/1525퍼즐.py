@@ -29,12 +29,6 @@ def strtolist(st):
         l.append(i)
     return l
 
-def nine(st):
-    1
-
-# print(ord("0"))
-# print(ord("8"))
-
 def bfs(zero):
     q = deque()
     visited = dict()
